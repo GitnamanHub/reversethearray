@@ -1,0 +1,10 @@
+#include <bits/stdc++.h> 
+void reverseArray(vector<int> &arr , int m)
+{
+	int j=1;
+	for(int i=m+1;i<=(arr.size()-1+m)/2;i++)
+	{
+		swap(arr.at(i),arr.at(arr.size()-j));
+		j++;
+	}
+}
